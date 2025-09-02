@@ -143,3 +143,14 @@ footer p {
 footer p:hover {
   color: #00AEEF; 
 }
+@media (max-width: 768px) {
+  .sobre-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sobre-imagem img {
+    width: 100%;
+    height: auto;
+  }
+}

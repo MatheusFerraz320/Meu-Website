@@ -204,21 +204,6 @@ footer p {
 footer p:hover {
   color: #00AEEF; 
 }
-@media (max-width: 768px) {
-  .sobre-container {
-    display: flex;
-    flex-direction: row; /* lado a lado */
-    align-items: flex-start;
-    justify-content: space-between;
-    flex-wrap: wrap; /* quebra em telas menores */
-    align-items: center;
-  }
-
-  .sobre-imagem img {
-    width: 100%;
-    height: auto;
-  }
-}
 
 /* Animações */
 @keyframes slideInLeft {
@@ -439,7 +424,48 @@ body.tema-purple .card-skill i {
 body.tema-purple .card-skill p {
   color: #bbb;
 }
+@media (max-width: 480px) {
+  #botaoTema {
+    top: 10px;
+    right: 10px;
+    padding: 8px 10px;
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 768px) {
+  .sobre-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 20px;
+  }
 
+  .sobre-texto {
+    margin-right: 0;
+    padding-left: 0;
+    text-align: center;
+  }
 
+  .sobre-imagem img {
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+  }
+}
+@media (max-width: 480px) {
+  .slide-left,
+  .slide-right {
+    animation-duration: 0.6s;
+  }
+}
+@media (max-width: 480px) {
+  .slide-left {
+    animation: fadeIn 0.5s ease-out forwards;
+  }
 
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+}
 

@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
@@ -11,30 +13,61 @@
 <header>
   <h1>Matheus Ferraz</h1>
   <p class = "paragrafoheader">Desenvolvedor | Estudante de Tecnologia | Apaixonado por Criação</p>
-  <header class="topo">
+<div class="topo">
   <nav class="menu">
     <a href="Index.html">Sobre</a>
     <a href="skills.html">Skills</a>
     <a href="projetos.html">Projetos</a>
-    <a href="contato.html">Contato</a>
   </nav>
+</div>  
 </header>
-<body id="body">
-    <section id="sobre" class="sobre-container">
+<body class="sobre-texto slide-left">
+  <section id="sobre" class="sobre-container">
   <div class="sobre-texto">
-    <h2>Sobre Mim</h2>
-    <p>Olá! Me chamo Matheus, sou desenvolvedor apaixonado por criações resoluções de problemas , experiências digitais envolventes. <p>Atualmente curso analise e desenvolvimento de sistemas 
-    na universidade leonardo da vinci.<p>Estou sempre em busca de novos desafios que me façam evoluir como profissional e como pessoa.</p>
-    <p>Meu objetivo é me tornar um desenvolvedor full stack entretanto sem fechar a portas para qualquer outra área da programação</p>
-    <p>
-    g  <Strong>WEBSITE EM CONSTRUÇÂO</Strong>
-    </p>  
+    <section id="sobre-mim">
+      <h2>Sobre Mim</h2>
+      <p>Olá! Sou Matheus Ferraz, desenvolvedor em formação e apaixonado por tecnologia, inovação e resolução de problemas. Após cinco anos atuando como Cabo na Polícia Militar de São Paulo, onde desenvolvi habilidades como trabalho sob pressão, inteligência operacional e organização de dados, decidi migrar para o universo da programação — uma área que sempre me fascinou.</p>
+
+      <p>Atualmente estou cursando Análise e Desenvolvimento de Sistemas no Centro Universitário Leonardo da Vinci, com previsão de conclusão em 2027. Paralelamente, venho me especializando em desenvolvimento web com foco em HTML, CSS, JavaScript e Python, por meio de cursos complementares oferecidos pela Fundação Bradesco.</p>
+
+      <p>Sou movido pelo aprendizado contínuo, pela adaptabilidade e pela vontade de construir soluções digitais que impactem positivamente pessoas e negócios. Meu objetivo é me tornar um desenvolvedor full stack, sem limitar minha atuação a uma única área — estou aberto a explorar todo o ecossistema da tecnologia.</p>
+
+      <p><strong>Este site está em construção — acompanhe minha evolução!</strong></p>
+
+      <h3>Formação Acadêmica e Cursos</h3>
+      <h4>📚 Ensino Superior</h4>
+      <ul>
+        <li><strong>Curso:</strong> Análise e Desenvolvimento de Sistemas</li>
+        <li><strong>Instituição:</strong> Centro Universitário Leonardo da Vinci (UNIASSELVI)</li>
+        <li><strong>Período:</strong> 2025 – 2027 (em andamento)</li>
+      </ul>
+
+      <h5>💻 Cursos Complementares</h5>
+      <ul>
+        <li>HTML5, CSS3, JavaScript – Criação de Websites – Fundação Bradesco</li>
+        <li>Programação Orientada a Objetos – Fundação Bradesco</li>
+        <li>Python Básico – Fundação Bradesco</li>
+      </ul>
   </div>
-<button onclick= "temapurple()" id="botaoTema">Ativar Tema Nocturna Cinzel</button>
+<button onclick= "temaPurple()" id="botaoTema">Tema Escuro</button>
   <div class="sobre-imagem">
-    <img src="imagem-central.jpeg" id= "imagemdinamica" alt="Fotos do autor matheus">
+    <img class="slide-right" src="imagem-central.jpeg" id= "imagemdinamica" alt="Fotos do autor matheus">
   </div>
 </section>
+<div class="redes-sociais">
+  <a href="https://www.linkedin.com/in/matheus-ferraz-6a1525379/" target="_blank" title="LinkedIn">
+    <i class="fab fa-linkedin"></i>
+  </a>
+  <a href="https://github.com/MatheusFerraz320" target="_blank" title="GitHub">
+    <i class="fab fa-github"></i>
+  </a>
+  <a href="mailto:matheusaugustosabinoferraz@outlook.com" title="Email">
+    <i class="fas fa-envelope"></i>
+  </a>
+  <a href="https://wa.me/5513991621955" target="_blank" title="WhatsApp">
+  <i class="fab fa-whatsapp"></i>
+</a>
+</div>
 <div class="footer-container">
   <footer>
     <p>© 2025 Matheus Ferraz — Todos os direitos reservados</p>

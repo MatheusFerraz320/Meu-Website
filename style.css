@@ -21,8 +21,7 @@
   color: #f11f1f;
 }
 h1  {
-    font-family: Arial, Helvetica, sans-serif
-    
+    font-family: Arial, Helvetica, sans-serif 
 }
 .paragrafoheader {
     font-family: raleway, sans-serif;
@@ -260,11 +259,11 @@ body.tema-purple .redes-sociais img {
 
 /* Classes animadas */
 .slide-left {
-  animation: slideInLeft 1s ease-out forwards;
+  animation: slideInLeft 2s ease-out forwards;
 }
 
 .slide-right {
-  animation: slideInRight 1s ease-out forwards;
+  animation: slideInRight 2s ease-out forwards;
 }
 .projetos-container {
   font-family: Raleway, sans-serif;
@@ -466,6 +465,11 @@ body.tema-purple .card-skill p {
   @keyframes fadeIn {
     from { opacity: 0; }
     to { opacity: 1; }
+  }
+}
+@media (max-width: 480px) {
+  .titulo {
+    padding-top: 60px; /* ou ajuste conforme necessário */
   }
 }
 

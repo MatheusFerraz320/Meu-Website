@@ -21,8 +21,7 @@
   color: #f11f1f;
 }
 h1  {
-    font-family: Arial, Helvetica, sans-serif
-    
+    font-family: Arial, Helvetica, sans-serif 
 }
 .paragrafoheader {
     font-family: raleway, sans-serif;
@@ -260,11 +259,11 @@ body.tema-purple .redes-sociais img {
 
 /* Classes animadas */
 .slide-left {
-  animation: slideInLeft 1s ease-out forwards;
+  animation: slideInLeft 2s ease-out forwards;
 }
 
 .slide-right {
-  animation: slideInRight 1s ease-out forwards;
+  animation: slideInRight 2s ease-out forwards;
 }
 .projetos-container {
   font-family: Raleway, sans-serif;
@@ -424,6 +423,7 @@ body.tema-purple .card-skill i {
 body.tema-purple .card-skill p {
   color: #bbb;
 }
+<<<<<<< HEAD
 @media (max-width: 768px) {
   .topo {
     padding: 1rem;
@@ -511,6 +511,55 @@ body.tema-purple .card-skill p {
     height: 32px;
   }
 }
+=======
+@media (max-width: 480px) {
+  #botaoTema {
+    top: 10px;
+    right: 10px;
+    padding: 8px 10px;
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 768px) {
+  .sobre-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 20px;
+  }
 
+  .sobre-texto {
+    margin-right: 0;
+    padding-left: 0;
+    text-align: center;
+  }
+>>>>>>> fae6c4c5b45a1c0a286512c6c3e9626d6a92f903
 
+  .sobre-imagem img {
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+  }
+}
+@media (max-width: 480px) {
+  .slide-left,
+  .slide-right {
+    animation-duration: 0.6s;
+  }
+}
+@media (max-width: 480px) {
+  .slide-left {
+    animation: fadeIn 0.5s ease-out forwards;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+}
+@media (max-width: 480px) {
+  .titulo {
+    padding-top: 60px; /* ou ajuste conforme necessário */
+  }
+}
 

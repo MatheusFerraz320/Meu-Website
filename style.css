@@ -12,7 +12,7 @@
 .menu a {
   color: #ffffff;
   text-decoration: none;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 600;
   transition: color 0.3s ease;
 }
@@ -20,21 +20,21 @@
 .menu a:hover {
   color: #f11f1f;
 }
-h1  {
-    font-family: Arial, Helvetica, sans-serif 
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
 }
 .paragrafoheader {
-    font-family: raleway, sans-serif;
-    font-size: 20px;
-    color: #1f1f1f;
-    text-shadow: 0 0 4px rgba(0, 0, 0, 0.875);
+  font-family: raleway, sans-serif;
+  font-size: 20px;
+  color: #1f1f1f;
+  text-shadow: 0 0 4px rgba(0, 0, 0, 0.875);
 }
 body {
   margin: 0;
   padding: 0;
   background: linear-gradient(135deg, #f4f4f4, #dfe3e6);
   color: #1f1f1f;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   line-height: 1.6;
   font-size: 17px;
   scroll-behavior: smooth;
@@ -51,7 +51,7 @@ a,
 }
 
 h2 {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 2.5rem;
   margin-bottom: 20px;
   color: #1f1f1f;
@@ -76,9 +76,9 @@ h2 {
 
 .sobre-texto {
   flex: 1;
-  margin-right: 2rem; 
-  padding-left: 20px; 
-  font-family: 'Inter', sans-serif;
+  margin-right: 2rem;
+  padding-left: 20px;
+  font-family: "Inter", sans-serif;
 }
 
 .sobre-texto h2 {
@@ -107,7 +107,7 @@ h2 {
   width: 450px;
   height: 600px;
   border-radius: 12px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   transition: transform 0.4s ease, filter 0.4s ease, box-shadow 0.4s ease;
   border: 3px solid transparent;
 }
@@ -115,13 +115,13 @@ h2 {
 .sobre-imagem img:hover {
   transform: scale(1.03);
   filter: brightness(1.1);
-  box-shadow: 0 0 20px rgba(0,0,0,0.3);
-  border-color: #070707; 
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  border-color: #070707;
 }
 body.tema-purple {
   background: linear-gradient(135deg, #1a1a1a, #2c2c2c);
   color: #e0e0e0;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   transition: background-color 0.3s ease;
 }
 
@@ -132,12 +132,14 @@ body.tema-purple .paragrafoheader {
   color: #c0c0c0;
 }
 
-h1, h2, a {
+h1,
+h2,
+a {
   transition: color 0.3s ease;
 }
 
 #imagemdinamica {
-    transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
 }
 #botaoTema {
   position: fixed;
@@ -148,7 +150,7 @@ h1, h2, a {
   color: #010003;
   border: 1px solid #03000a;
   border-radius: 8px;
-  font-family: 'Cinzel', serif;
+  font-family: "Cinzel", serif;
   font-weight: bold;
   cursor: pointer;
   box-shadow: 0 2px 6px rgba(228, 218, 255, 0.3);
@@ -167,7 +169,6 @@ body.tema-purple #botaoTema {
   background: radial-gradient(circle at top left, #1a1a1a, #2c2c2c);
   color: #c0c0c0;
   border-color: #c0c0c0;
-
 }
 
 /* Hover no tema escuro */
@@ -177,31 +178,31 @@ body.tema-purple #botaoTema:hover {
 }
 
 footer {
-  background: linear-gradient(135deg, #0d0d0d, #e0e0e0);
-  padding: 30px 10px;
   text-align: center;
-  position: relative;
-  bottom: 0;
-  width: 100%;
-  color: #ddd;
-  font-family: "Montserrat", sans-serif;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-footer .footer-container {
-  max-width: 1200px;
-  margin: auto;
+  padding: 25px 15px;
+  font-family: "Raleway", sans-serif;
+  font-size: 0.95rem;
+  color: #444;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  letter-spacing: 0.6px;
 }
 
 footer p {
-  margin: 5px 0;
-  font-size: 0.95rem;
-  letter-spacing: 0.5px;
+  margin: 6px 0;
   transition: color 0.3s ease;
 }
 
 footer p:hover {
-  color: #00AEEF; 
+  color: #6c63ff; /* Roxo suave e moderno */
+  cursor: default;
+}
+body.tema-purple footer {
+  color: #c0c0c0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+body.tema-purple footer p:hover {
+  color: #9f8fff; /* Roxo claro elegante no hover */
 }
 
 /* Animações */
@@ -245,17 +246,14 @@ footer p:hover {
   filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
 }
 
-
 .redes-sociais a:hover {
   transform: scale(1.1);
   filter: brightness(1.2);
 }
 
-
 body.tema-purple .redes-sociais img {
   filter: drop-shadow(0 2px 4px rgba(255, 255, 255, 0.2));
 }
-
 
 /* Classes animadas */
 .slide-left {
@@ -265,89 +263,7 @@ body.tema-purple .redes-sociais img {
 .slide-right {
   animation: slideInRight 2s ease-out forwards;
 }
-.projetos-container {
-  font-family: Raleway, sans-serif;
-}
-.projetos-container {
-  max-width: 800px;
-  margin: 60px auto;
-  padding: 30px;
-  background: linear-gradient(135deg, #f4f4f4, #dfe3e6);
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  font-family: 'Inter', sans-serif;
-}
 
-.projetos-container h1 {
-  font-size: 32px;
-  text-align: center;
-  margin-bottom: 30px;
-  color: #1f1f1f;
-}
-
-.projetos-container ul {
-  list-style: none;
-  padding: 0;
-}
-
-.projetos-container li {
-  margin-bottom: 25px;
-  padding: 15px;
-  border-left: 4px solid #000000;
-  background-color: #ffffff;
-  border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
-}
-
-.projetos-container li strong {
-  display: block;
-  font-size: 18px;
-  margin-bottom: 8px;
-  color: #1f1f1f;
-}
-
-.projetos-container a {
-  color: #e70d0d;
-  text-decoration: none;
-  font-weight: 600;
-}
-
-.projetos-container a:hover {
-  text-decoration: underline;
-}
-
-.projetos-container p {
-  margin-top: 10px;
-  font-size: 15px;
-  color: #333333;
-  line-height: 1.6;
-}
-
-body.tema-purple .projetos-container {
-  background: linear-gradient(135deg, #1a1a1a, #2c2c2c);
-  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.05);
-}
-
-body.tema-purple .projetos-container h1 {
-  color: #4da8da;
-}
-
-body.tema-purple .projetos-container li {
-  background-color: #121212;
-  border-left: 4px solid #4da8da;
-}
-
-body.tema-purple .projetos-container li strong {
-  color: #e0e0e0;
-}
-
-body.tema-purple .projetos-container a {
-  color: #4da8da;
-}
-
-body.tema-purple .projetos-container p {
-  color: #cccccc;
-}
 .skills-container {
   padding: 60px 20px;
   text-align: center;
@@ -356,7 +272,7 @@ body.tema-purple .projetos-container p {
 .titulo-skills {
   font-size: 2.5rem;
   margin-bottom: 40px;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   color: #1f1f1f;
   text-shadow: 0 0 6px rgba(255, 255, 255, 0.3);
 }
@@ -391,13 +307,13 @@ body.tema-purple .projetos-container p {
 .card-skill h3 {
   font-size: 1.3rem;
   margin-bottom: 10px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .card-skill p {
   font-size: 0.95rem;
   color: #555;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 
 /* 🌙 Modo Escuro */
@@ -423,95 +339,6 @@ body.tema-purple .card-skill i {
 body.tema-purple .card-skill p {
   color: #bbb;
 }
-<<<<<<< HEAD
-@media (max-width: 768px) {
-  .topo {
-    padding: 1rem;
-    text-align: center;
-  }
-
-  .menu {
-    flex-direction: column;
-    gap: 1rem;
-    align-items: center;
-  }
-
-  .sobre-container {
-    flex-direction: column;
-    padding: 20px;
-    gap: 2rem;
-    align-items: center;
-  }
-
-  .sobre-texto {
-    margin: 0;
-    padding: 0 10px;
-    text-align: center;
-  }
-
-  .sobre-texto h2 {
-    font-size: 1.8rem;
-  }
-
-  .sobre-imagem img {
-    width: 90%;
-    height: auto;
-    max-width: 400px;
-  }
-
-  .paragrafoheader {
-    font-size: 1rem;
-    padding: 0 10px;
-    text-align: center;
-  }
-
-  .projetos-container {
-    padding: 20px;
-    margin: 30px 10px;
-  }
-
-  .projetos-container h1 {
-    font-size: 1.8rem;
-  }
-
-  .skills-container {
-    padding: 40px 10px;
-  }
-
-  .titulo-skills {
-    font-size: 2rem;
-  }
-
-  .cards-skills {
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }
-
-  #botaoTema {
-    position: static;
-    margin: 20px auto;
-    display: block;
-    width: 80%;
-    max-width: 250px;
-  }
-
-  footer {
-    padding: 20px 10px;
-    font-size: 0.85rem;
-  }
-
-  .redes-sociais {
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 15px;
-  }
-
-  .redes-sociais img {
-    width: 32px;
-    height: 32px;
-  }
-}
-=======
 @media (max-width: 480px) {
   #botaoTema {
     top: 10px;
@@ -533,7 +360,6 @@ body.tema-purple .card-skill p {
     padding-left: 0;
     text-align: center;
   }
->>>>>>> fae6c4c5b45a1c0a286512c6c3e9626d6a92f903
 
   .sobre-imagem img {
     width: 100%;
@@ -553,8 +379,12 @@ body.tema-purple .card-skill p {
   }
 
   @keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
   }
 }
 @media (max-width: 480px) {
@@ -563,3 +393,106 @@ body.tema-purple .card-skill p {
   }
 }
 
+.projetos-container {
+  text-align: center;
+  padding: 2rem;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  width: 100%;
+  max-width: 320px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  font-family: "Inter", sans-serif;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.card-content {
+  padding: 1.2rem;
+}
+
+.card-content h3 {
+  margin-top: 0;
+  font-size: 1.4rem;
+  color: #1f1f1f;
+  font-family: "Montserrat", sans-serif;
+}
+
+.card-content p {
+  margin: 0.5rem 0;
+  color: #333;
+  font-size: 0.95rem;
+  font-family: "Raleway", sans-serif;
+}
+
+.botoes {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.botoes a {
+  text-decoration: none;
+  background-color: #e70d0d;
+  color: #fff;
+  padding: 0.5rem 0.8rem;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.botoes a:hover {
+  background-color: #b80c0c;
+  transform: scale(1.05);
+}
+
+/* 🌙 Modo Escuro */
+body.tema-purple .card {
+  background-color: #1e1e1e;
+  box-shadow: 0 6px 16px rgba(255, 255, 255, 0.05);
+}
+
+body.tema-purple .card-content h3 {
+  color: #e0e0e0;
+}
+
+body.tema-purple .card-content p {
+  color: #cccccc;
+}
+
+body.tema-purple .botoes a {
+  background-color: #4da8da;
+  color: #1a1a1a;
+}
+
+body.tema-purple .botoes a:hover {
+  background-color: #3498db;
+  color: #ffffff;
+}

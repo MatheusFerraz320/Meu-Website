@@ -1,21 +1,15 @@
-let imagemDinamica = document.getElementById("imagemDinamica"); 
-let imagens = [
-    "imagem1.jpg",
-    "imagem2.jpeg", //ARRAY
-    
-];
+let imagemDinamica = document.getElementById("imagemDinamica");
+let imagens = ["imagem1.png", "imagem2.jpeg"];
 
-let imagematual = 0; // começa na imagem 1
+let imagemAtual = 0; // começa na imagem 1
 
 function trocaimagem() {
-    imagematual = (imagematual + 1) % imagens.length;
-    imagemDinamica.src = imagens[imagematual];
+  imagemAtual = (imagemAtual + 1) % imagens.length;
+  imagemDinamica.src = imagens[imagemAtual];
 }
-
 
 setInterval(trocaimagem, 5000);
 
- 
 function temaPurple() {
   const botao = document.getElementById("botaoTema");
   const body = document.body;

@@ -1,75 +1,162 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Projetos</title>
-</head>
-<body class="sobre-texto slide-left">
-<header class="titulo">
-  <h1>Matheus Ferraz</h1>
-  <p class = "paragrafoheader">Desenvolvedor | Estudante de Tecnologia | Apaixonado por Criação</p>
-    <div class="topo">
-      <nav class="menu">
-        <a href="index.html">Sobre</a>
-        <a href="skills.html">Skills</a>
-        <a href="projetos.html">Projetos</a>
-      </nav>
-    </div>  
-  </header>
-</header>
-<button onclick= "temaPurple()" id="botaoTema">Tema Escuro</button>
-  <div class="projetos-container">
-    <h1>
-        <strong>
-            PROJETOS
-        </strong>
-    </h1>
-    <ul>
-        <li>Projeto1 <a href="https://matheusferraz320.github.io/Site-Nutricionista/servicos.html">Link</a>
-            <p>      
-             Elaborei utilizando html , css , javascript um site de uma profissional de nutrição
-                <br>
-             Nele além de de diversas seções , também implementei uma calculadora de IMC (Índice de Massa Corporal) para auxiliar os usuários a monitorarem sua saúde. 
-            </p>
-        </li>     
-        <li>Projeto 2: <a href="https://matheusferraz320.github.io/Calculadora-de-descontos/">Link</a>
-            <p> Desenvolvi uma calculadora de descontos utilizando HTML, CSS e JavaScript. Essa ferramenta permite aos usuários calcular descontos de forma rápida e eficiente, facilitando suas decisões de compra.
-        </li> 
-        <li>Projeto 3: <a href="https://matheusferraz320.github.io/Currency-Converter">Link</a>
-            <p> Criei uma aplicação para conversão de moedas utilizando HTML, BOOTSTRAP e JavaScript. Essa ferramenta permite aos usuários converter moedas de forma rápida e eficiente, ainda implementando funções.
-        <li>Projeto 4: <a href=https://matheusferraz320.github.io/Jogo-da-velha>Link</a>
-            <p> Um simples jogo da velha ! Utilizei bootstrap e javascript.
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="sobre-texto slide-left">
+    <header class="titulo">
+      <h1>Matheus Ferraz</h1>
+      <p class="paragrafoheader">
+        Desenvolvedor | Estudante de Tecnologia | Apaixonado por Criação
+      </p>
+      <div class="topo">
+        <nav class="menu">
+          <a href="index.html">Sobre</a>
+          <a href="skills.html">Skills</a>
+          <a href="projetos.html">Projetos</a>
+        </nav>
+      </div>
+    </header>
 
-        </li>    
-    </ul> 
-     <Strong>Atualmente estudando REACT</Strong>
-  </div>
-<div class="redes-sociais">
-  <a href="https://www.linkedin.com/in/matheus-ferraz-6a1525379/" target="_blank" title="LinkedIn">
-    <i class="fab fa-linkedin"></i>
-  </a>
-  <a href="https://github.com/MatheusFerraz320" target="_blank" title="GitHub">
-    <i class="fab fa-github"></i>
-  </a>
-  <a href="mailto:matheusaugustosabinoferraz@outlook.com" title="Email">
-    <i class="fas fa-envelope"></i>
-  </a>
-  <a href="https://wa.me/5513991621955" target="_blank" title="WhatsApp">
-  <i class="fab fa-whatsapp"></i>
-</a>
-</div>
-<div class="footer-container">
-  <footer>
-    <p>© 2025 Matheus Ferraz — Todos os direitos reservados</p>
-    <p>Desenvolvido com 💻 HTML/CSS/JAVASCRIPT e café ☕</p>
-  </footer>
-</div>
-<script src="app.js"></script>
-</body>
+    <button onclick="temaPurple()" id="botaoTema">Tema Escuro</button>
+
+    <div class="projetos-container">
+      <h1><strong>PROJETOS</strong></h1>
+
+      <div class="cards-container">
+        <div class="card">
+          <img src="img/projeto1-preview.png" alt="Site Nutricionista" />
+          <div class="card-content">
+            <h3>Site Nutricionista</h3>
+            <p>HTML, CSS, JavaScript</p>
+            <p>Site institucional com calculadora de IMC.</p>
+            <div class="botoes">
+              <a
+                href="https://matheusferraz320.github.io/Site-Nutricionista/servicos.html"
+                target="_blank"
+                >🔗 Ver online</a
+              >
+              <a
+                href="https://github.com/matheusferraz320/Site-Nutricionista"
+                target="_blank"
+                >📁 Código</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="imgs/Desconto.png" alt="Calculadora de Descontos" />
+          <div class="card-content">
+            <h3>Calculadora de Descontos</h3>
+            <p>HTML, CSS, JavaScript</p>
+            <p>Ferramenta para cálculo rápido de descontos.</p>
+            <div class="botoes">
+              <a
+                href="https://matheusferraz320.github.io/Calculadora-de-descontos/"
+                target="_blank"
+                >🔗 Ver online</a
+              >
+              <a
+                href="https://github.com/matheusferraz320/Calculadora-de-descontos"
+                target="_blank"
+                >📁 Código</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="imgs/Currency.png" alt="Conversor de Moedas" />
+          <div class="card-content">
+            <h3>Conversor de Moedas</h3>
+            <p>HTML, Bootstrap, JavaScript</p>
+            <p>Aplicação para conversão de moedas com funções extras.</p>
+            <div class="botoes">
+              <a
+                href="https://matheusferraz320.github.io/Currency-Converter"
+                target="_blank"
+                >🔗 Ver online</a
+              >
+              <a
+                href="https://github.com/matheusferraz320/Currency-Converter"
+                target="_blank"
+                >📁 Código</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="imgs/weather.png" alt="Previsão do Tempo" />
+          <div class="card-content">
+            <h3>Previsão do Tempo</h3>
+            <p>React, OpenWeather API</p>
+            <p>Aplicação React que exibe clima em tempo real.</p>
+            <div class="botoes">
+              <a
+                href="https://matheusferraz320.github.io/Meu-Primeiro-Projeto-React"
+                target="_blank"
+                >🔗 Ver online</a
+              >
+              <a
+                href="https://github.com/matheusferraz320/Meu-Primeiro-Projeto-React"
+                target="_blank"
+                >📁 Código</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="redes-sociais">
+      <a
+        href="https://www.linkedin.com/in/matheus-ferraz-6a1525379/"
+        target="_blank"
+        title="LinkedIn"
+      >
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a
+        href="https://github.com/MatheusFerraz320"
+        target="_blank"
+        title="GitHub"
+      >
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="mailto:matheusaugustosabinoferraz@outlook.com" title="Email">
+        <i class="fas fa-envelope"></i>
+      </a>
+      <a href="https://wa.me/5513991621955" target="_blank" title="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+      </a>
+    </div>
+
+    <footer>
+      <p>© 2025 Matheus Ferraz — Todos os direitos reservados</p>
+      <p>Desenvolvido com 💻 HTML/CSS/JAVASCRIPT e café ☕</p>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
 </html>

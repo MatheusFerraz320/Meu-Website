@@ -5,7 +5,7 @@
 
 .menu {
   display: flex;
-  justify-content: center; /* ou space-between / flex-end / flex-start */
+  justify-content: center;
   gap: 2rem;
 }
 
@@ -63,7 +63,7 @@ h2 {
   justify-content: space-between;
   align-items: flex-start;
   gap: 2rem;
-  flex-wrap: nowrap; /* Impede quebra para baixo */
+  flex-wrap: nowrap;
 }
 
 .sobre-container {
@@ -142,6 +142,7 @@ a {
   transition: opacity 1s ease-in-out;
 }
 #botaoTema {
+  font-size: 16px;
   position: fixed;
   top: 20px;
   right: 20px;
@@ -257,11 +258,11 @@ body.tema-purple .redes-sociais img {
 
 /* Classes animadas */
 .slide-left {
-  animation: slideInLeft 2s ease-out forwards;
+  animation: slideInLeft 1s ease-out forwards;
 }
 
 .slide-right {
-  animation: slideInRight 2s ease-out forwards;
+  animation: slideInRight 1s ease-out forwards;
 }
 
 .skills-container {

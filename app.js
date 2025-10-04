@@ -8,7 +8,7 @@ function trocaimagem() {
   imagemDinamica.src = imagens[imagemAtual];
 }
 
-setInterval(trocaimagem, 5000);
+//setInterval(trocaimagem, 5000);
 
 function temaPurple() {
   const botao = document.getElementById("botaoTema");

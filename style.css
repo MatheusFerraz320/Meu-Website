@@ -120,15 +120,24 @@ h2 {
   list-style-type: disc;
   padding-left: 20px;
 }
+.sobre-imagem {
+  display: flex;
+  align-items: center; 
+  gap: 20px; 
+  flex-wrap: wrap; 
+}
 
 .sobre-imagem img {
   width: 450px;
-  height: 600px;
-  border-radius: 12px;
+  height: 700px; 
+  border-radius: 14px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   transition: transform 0.4s ease, filter 0.4s ease, box-shadow 0.4s ease;
   border: 3px solid transparent;
 }
+
+
+
 body.tema-purple .sobre-texto {
   color: #cccccc;
 }
@@ -232,12 +241,16 @@ footer p:hover {
   cursor: default;
 }
 body.tema-purple footer {
-  color: #c0c0c0;
+  color: #f1f1f1;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
+body.tema-purple footer p {
+  color:#f7f7f7;
+}
+
 body.tema-purple footer p:hover {
-  color: #9f8fff; /* Roxo claro elegante no hover */
+  color: #9f8fff; 
 }
 
 /* Animações */

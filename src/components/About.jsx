@@ -4,8 +4,8 @@ export default function About() {
   return (
     <div
       id="about"
-      className="w-screen min-h-screen bg-gradient-to-r from-gray-950 via-gray-900 to-gray-700 
-                 text-white flex flex-col items-center px-6 py-20 font-[Montserrat]"
+      className="w-screen min-h-screen bg-gradient-to-r from-[#1a1a2e] via-[#16213e] to-[#0f3460]
+             text-white flex flex-col items-center px-6 py-20 font-[Montserrat]"
     >
       <motion.h2
         initial={{ opacity: 0, y: -30 }}
@@ -18,6 +18,7 @@ export default function About() {
 
       <div className="flex flex-col md:flex-row items-center gap-16 mb-16 max-w-5xl">
         <motion.img
+          whileHover={{ scale: 1.10 }}
           src="/images/fotoMatheus.jpeg"
           alt="Foto de Matheus"
           initial={{ opacity: 0, x: -50 }}

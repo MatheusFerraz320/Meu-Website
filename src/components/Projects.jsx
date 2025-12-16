@@ -11,7 +11,7 @@ export default function Projects() {
       technologies: "HTML, CSS, JavaScript, React.js, Tailwind, Bootstrap",
       description:
         "Sites profissionais e landing pages responsivas, otimizadas para SEO e performance, com código limpo e boas práticas.",
-      image: "/images/landingpage.png",
+      video: "/videos/landingPage.mp4",
       codeLink: "https://github.com/seu-usuario/landing-pages",
     },
     {
@@ -33,7 +33,7 @@ export default function Projects() {
       title: "Habits Dashboard",
       technologies: "HTML, Bootstrap, JavaScript, Python (Flask), SQLite",
       description:
-        "Aplicação completa para monitoramento de hábitos diários, com persistência de dados e layout responsivo.",
+        "Aplicação completa para monitoramento de hábitos diários, com persistência de dados e layout responsivo. Esse foi meu projeto final para o curso CS50x de Harvard EDX meu primeiro projeto full stack.",
       features: [
         "Inserção e remoção de hábitos",
         "Habit check (marcar/desmarcar conclusão)",
@@ -42,8 +42,16 @@ export default function Projects() {
         "Backend Python com Flask",
         "Banco de dados SQLite",
       ],
-      image: "/images/healthyflow.png",
+      video : "/videos/healthyFlow.mp4",
       codeLink: "https://github.com/seu-usuario/habits-dashboard",
+    },
+    {
+      title: "Gym System",
+      technologies: "Node.js (Express), React, Tailwind, Full Stack",
+      description:
+        "Sistema completo de academia em desenvolvimento, voltado para o gerenciamento de alunos, mensalidades e funcionários. O projeto é full stack, integrando um backend robusto em Node.js com Express, um frontend moderno em React + Tailwind e persistência de dados com SQLite. A solução busca oferecer uma plataforma escalável e intuitiva para controle administrativo, financeiro e operacional da academia. Ainda está em andamento, com novas funcionalidades sendo adicionadas continuamente.",
+      video: "/videos/gymSystem.mp4",
+      codeLink: "https://github.com/seu-usuario/gym-system",
     },
   ];
 
@@ -76,11 +84,21 @@ export default function Projects() {
             onClick={() => setSelectedProject(project)}
             className="cursor-pointer relative rounded-2xl overflow-hidden shadow-lg group"
           >
-            <img
-              src={project.image}
-              alt={project.title}
-              className="object-cover h-80 w-full transition-transform duration-300 group-hover:scale-110"
-            />
+            {project.video ? (
+              <video
+                src={project.video}
+                className="object-cover h-80 w-full transition-transform duration-300 group-hover:scale-110"
+                muted
+                autoPlay
+                loop
+              />
+            ) : (
+              <img
+                src={project.image}
+                alt={project.title}
+                className="object-cover h-80 w-full transition-transform duration-300 group-hover:scale-110"
+              />
+            )}
             <div className="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition">
               <h3 className="text-xl font-bold text-white">{project.title}</h3>
             </div>
@@ -111,11 +129,20 @@ export default function Projects() {
                 ✕
               </button>
 
-              <img
-                src={selectedProject.image}
-                alt={selectedProject.title}
-                className="rounded-xl mb-4 object-cover h-72 w-full shadow-md"
-              />
+              {selectedProject.video ? (
+                <video
+                  src={selectedProject.video}
+                  controls
+                  className="rounded-xl mb-4 object-cover h-72 w-full shadow-md"
+                />
+              ) : (
+                <img
+                  src={selectedProject.image}
+                  alt={selectedProject.title}
+                  className="rounded-xl mb-4 object-cover h-72 w-full shadow-md"
+                />
+              )}
+
               <h3 className="text-2xl font-bold mb-2">{selectedProject.title}</h3>
               <p className="text-sm italic mb-3 text-gray-600">
                 {selectedProject.technologies}
